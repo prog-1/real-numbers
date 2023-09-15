@@ -16,7 +16,7 @@ $$m \cdot 10^p.$$
 
 The coefficient $m$ is a decimal fraction that is called the *mantissa*. The integer $p$ is called the exponent.
 
-$$12.345 = \underbrace{12345}_\text{mantissa} \cdot \underbrace{10}_\text{base}\ ^{\overbrace{-3}^\text{exponent}}$$
+$$12.345 = \underbrace{12345}_\text{mantissa} \cdot 10^{\overbrace{-3}^\text{exponent}}$$
 
 The scientific notation is used for representing very big or very small numbers, e.g.
 
