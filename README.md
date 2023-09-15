@@ -72,3 +72,15 @@ A floating point number stored in a computer uses a fixed precision. For example
 ### Relative eror
 
 The relative error for fixed precision numbers is constant.
+
+## Binary scientific notation
+
+A binary number in the scientific notation is written in the following form:
+
+$$m \cdot 2^p.$$
+
+Examples:
+
+* $101101.101_2 = 1\cdot2^5+0\cdot2^4+1\cdot2^3+1\cdot2^2+0\cdot2^1+1\cdot2^0+1\cdot2^{-1}+0\cdot2^{-2}+1\cdot2^{-3}=45.625$
+
+* $0.2_{10} = $
