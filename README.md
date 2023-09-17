@@ -79,8 +79,28 @@ A binary number in the scientific notation is written in the following form:
 
 $$m \cdot 2^p.$$
 
-Examples:
+2-base $\leftrightarrow$ 10-base conversion examples:
 
 * $101101.101_2 = 1\cdot2^5+0\cdot2^4+1\cdot2^3+1\cdot2^2+0\cdot2^1+1\cdot2^0+1\cdot2^{-1}+0\cdot2^{-2}+1\cdot2^{-3}=45.625$
 
-* $0.2_{10} = $
+* $0.2_{10} = \frac{1}{5}_2 =\ ?$
+  * $0.2 \cdot 2 = 0.4 + \textbf{0}$
+  * $0.4 \cdot 2 = 0.8 + \textbf{0}$
+  * $0.8 \cdot 2 = 0.6 + \textbf{1}$
+  * $0.6 \cdot 2 = 0.2 + \textbf{1}$
+  * $0.2 \cdot 2 = 0.4 + \textbf{0}$
+  * $0.4 \cdot 2 = 0.8 + \textbf{0}$
+  * $0.2_{10} = 0.(0011)_2$
+
+### Exercises
+* $0.1101_2 = \ ?$ 
+* $0.7_{10} = \ ?$
+
+## Single precision (`float32`)
+
+* [Wikipedia: Single-precision floating-point format](https://en.wikipedia.org/wiki/Single-precision_floating-point_format)
+* [Exposing floating point](https://ciechanow.ski/exposing-floating-point/)
+* https://float.exposed/
+* [Float32 Go playground demo](https://go.dev/play/p/ppV7IGUk9SX)
+* [Wikipedia: Subnormal numbers](https://en.wikipedia.org/wiki/Subnormal_number)
+* [Subnormal numbers precision Go playground demo](https://go.dev/play/p/zYLUSFOpyDX)
