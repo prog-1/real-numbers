@@ -78,7 +78,7 @@ A floating point number stored in a computer uses a fixed precision. For example
 * the absolute error is $0.0001$ for numbers with four digits of precision with the exponent $-1$;
 * etc.
 
-### Relative eror
+### Relative error
 
 The relative error for fixed precision numbers is constant.
 
