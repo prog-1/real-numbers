@@ -69,15 +69,6 @@ A floating point number stored in a computer uses a fixed precision. For example
 * Absolute error: $|X_\text{true} - X_\text{observed}|$.
 * Relative error: $\frac{|X_\text{true} - X_\text{observed}|}{X_\text{true}}$.
 
-> [!IMPORTANT]
-> What is an absolute and a relative error of a floating-point number in base ten with four digits or precision?
-
-### Absolute error
-* The absolute error is $0.001$ for numbers with four digits of precision with the exponent $0$;
-* the absolute error is $0.01$ for numbers with four digits of precision with the exponent $1$;
-* the absolute error is $0.0001$ for numbers with four digits of precision with the exponent $-1$;
-* etc.
-
 ### Relative error
 
 The relative error for fixed precision numbers is constant.
@@ -121,4 +112,19 @@ $$m \cdot 2^p.$$
 ## Subnormal numbers
 
 * [Wikipedia: Subnormal numbers](https://en.wikipedia.org/wiki/Subnormal_number)
+
+## Double precision (`float64`)
+
+* [Wikipedia: Double-precision floating-point format](https://en.wikipedia.org/wiki/Double-precision_floating-point_format)
+
+# Examples 
+
+* [Checking for equality](https://go.dev/play/p/lKdvVM72C-Y)
+* [Epsilon](https://go.dev/play/p/iUP37yY5Cdt)
+* [Arithmetic expressions](https://go.dev/play/p/-MKUWeDBml7)
+* [Precision](https://go.dev/play/p/l-LAjux3JAm)
+* [The odometer that stopped](https://go.dev/play/p/CLmsmYeYQDS)
+   * https://float.exposed/0x48800000
 * [Subnormal numbers precision Go playground demo](https://go.dev/play/p/zYLUSFOpyDX)
+* [Deep Space Kraken](https://wiki.kerbalspaceprogram.com/wiki/Deep_Space_Kraken)
+  * [YT](https://www.youtube.com/watch?v=bfuoMhhye4g)
