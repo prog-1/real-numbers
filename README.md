@@ -33,6 +33,15 @@ number. This position is indicated by the exponent, so floating point can be
 considered a form of scientific notation.
 
 ### Fixed point
+
+In computing, fixed-point is a method of representing fractional (non-integer) numbers by storing a fixed number of digits
+of their fractional part. Dollar amounts, for example, are often stored with exactly two fractional digits, representing
+the cents (1/100 of dollar). More generally, the term may refer to representing fractional values as integer multiples of
+some fixed small unit, e.g. a fractional amount of hours as an integer multiple of ten-minute intervals. Fixed-point number
+representation is often contrasted to the more complicated and computationally demanding floating-point representation.
+
+### Normalized scientific notation
+
 A number is *normalized* when it is written in
 scientific notation with one non-zero decimal digit before the decimal point.
 Thus, a real number, when written out in normalized scientific notation, is as
@@ -69,7 +78,7 @@ A floating point number stored in a computer uses a fixed precision. For example
 * the absolute error is $0.0001$ for numbers with four digits of precision with the exponent $-1$;
 * etc.
 
-### Relative eror
+### Relative error
 
 The relative error for fixed precision numbers is constant.
 
