@@ -102,5 +102,8 @@ $$m \cdot 2^p.$$
 * [Exposing floating point](https://ciechanow.ski/exposing-floating-point/)
 * https://float.exposed/
 * [Float32 Go playground demo](https://go.dev/play/p/ppV7IGUk9SX)
+
+## Subnormal numbers
+
 * [Wikipedia: Subnormal numbers](https://en.wikipedia.org/wiki/Subnormal_number)
 * [Subnormal numbers precision Go playground demo](https://go.dev/play/p/zYLUSFOpyDX)
