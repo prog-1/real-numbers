@@ -124,6 +124,58 @@ Note: Go doesn't support it!
 
 * [Wikipedia: Extended precision](https://en.wikipedia.org/wiki/Extended_precision)
 
+## Hypothetical machine
+
+Let's image a hypothetical decimal floating point processor, which uses 5 decimal digits to represent a number. The first digit is an exponent with delta 5, and the next four digits represent the number with the decimal point always being after the first digit. We event won't store it.
+
+Examples:
+
+1. $1=1.000 \cdot 10^{0} \therefore exp=0+5=5, m=1.000 \therefore x=51000$.
+2. $12.34=1.234 \cdot 10^{1} \therefore exp=1+5=6,  m=1.2345 \therefore x=61234$
+3. $0.012=1.2 \cdot 10^{-2} \therefore exp=-2+5=3, m=1.200 \therefore x=31200$
+
+Let's introduce some operations:
+
+```
+1) 1234+4321=5555
+   81234
+   84321
+   -----
+   85555    =5555
+
+2) 12.34+43.21=55.55
+   61234
+   64321
+   -----
+   65555      =55.55
+
+3) 1.234+43.21=44.444
+   51234
+   64321
+   -----
+   6_1234
+   64321
+   ------
+   644444
+   64444      =44.44
+
+4) 1000x0.0001+1.000=2
+   11000   12000  ...  49999       51000
+   11000   11000       11000       51000
+   -----   -----       49999       _____
+   12000   13000       4   1000    52000 = 2
+                       ________
+                       51000
+
+5) 1+1000*0.0001=2
+   51000         51000   ... It's always 1
+   11000         11000
+   _____         _____
+   51000         .....
+   5    1000     51000 = 1
+   _________
+   51000
+```
 
 ## Errors grow
 
