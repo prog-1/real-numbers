@@ -142,10 +142,10 @@ y=1101-1100=1 \\
 
 But let's add $10^{-2}$ to the right side:
 
-$\begin{cases}
-  x+10y=11.01 &
-  100x+1001y=1101 &
-\end{cases}$
+$$\begin{cases}
+  x+10y=11.01 
+  100x+1001y=1101 
+\end{cases}$$
 
 $$x=11.01-10y
 100 \cdot (11.01-10y)+1001y=1101
