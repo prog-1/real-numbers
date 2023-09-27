@@ -124,7 +124,21 @@ Note: Go doesn't support it!
 
 * [Wikipedia: Extended precision](https://en.wikipedia.org/wiki/Extended_precision)
 
-## Hypothetical machine
+## Errors
+
+Let's consider this example (https://go.dev/play/p/1UrxY17kz6R):
+
+```go
+const delta = 1e-6
+var sum float32 = 1e6
+for i := 0; i < 1e6; i++ {
+		sum += delta
+}
+fmt.Printf("%F\n", sum)           // ???
+fmt.Printf("%F\n", 1e6+delta*1e6) // ???
+```
+
+### Hypothetical machine
 
 Let's image a hypothetical decimal floating point processor, which uses 5 decimal digits to represent a number. The first digit is an exponent with delta 5, and the next four digits represent the number with the decimal point always being after the first digit. We event won't store it.
 
@@ -177,7 +191,7 @@ Let's introduce some operations:
    51000
 ```
 
-## Errors grow
+### Errors grow
 
 $$\begin{cases}
   x+10y=11 \\
