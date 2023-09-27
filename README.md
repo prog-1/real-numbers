@@ -127,32 +127,32 @@ Note: Go doesn't support it!
 
 ## Errors grow
 
-$\begin{cases}
+$$\begin{cases}
 x+10y=11 \\
 100x+1001y=1101 \\
-\end{cases}$
-$x=11-10y$
-$100 \cdot (11-10y)+1001y=1101$
-$1100-1000y+1001y=1101$
-$1100+y=1101$
-$\begin{cases}
+\end{cases}$$
+$$x=11-10y$$
+$$100 \cdot (11-10y)+1001y=1101$$
+$$1100-1000y+1001y=1101$$
+$$1100+y=1101$$
+$$\begin{cases}
 x=11-10y=11-10=1
 y=1101-1100=1 \\
-\end{cases}$
+\end{cases}$$
 
-But let's add $1e-2$ to the right side:
-$\begin{cases}
+But let's add $$10^{-2}$$ to the right side:
+$$\begin{cases}
 x+10y=11.01 \\
 100x+1001y=1101 \\
-\end{cases}$
-$x=11.01-10y$
-$100 \cdot (11.01-10y)+1001y=1101$
-$1101-1000y+1001y=1101$
-$y=0$
-$\begin{cases}
+\end{cases}$$
+$$x=11.01-10y$$
+$$100 \cdot (11.01-10y)+1001y=1101$$
+$$1101-1000y+1001y=1101$$
+$$y=0$$
+$$\begin{cases}
 x=11 \\
 y=0
-\end{cases}$
+\end{cases}$$
 
 # Examples 
 
