@@ -128,8 +128,8 @@ Note: Go doesn't support it!
 ## Errors grow
 
 $$\begin{cases}
-x+10y=11 \\
-100x+1001y=1101 \\
+  x+10y=11 \\
+  100x+1001y=1101 \\
 \end{cases}$$
 
 $$x=11-10y$$
@@ -147,10 +147,10 @@ y=1101-1100=1
 
 But let's add $10^{-2}$ to the right side:
 
-$\begin{cases}
+$$\begin{cases}
   x+10y=11.01 \\ 
   100x+1001y=1101 
-  \end{cases}$
+\end{cases}$$
 
 $$x=11.01-10y$$
 
@@ -163,7 +163,7 @@ $$y=0$$
 $$\begin{cases}
     x=11 \\
     y=0
-  \end{cases}$$
+\end{cases}$$
 
 # Examples 
 
