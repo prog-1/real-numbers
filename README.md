@@ -190,6 +190,12 @@ Let's introduce some operations:
    _________
    51000
 ```
+### Exercises
+
+<!-- solution: https://go.dev/play/p/J5kb08-uH5C -->
+
+1. Compare $\frac{a \cdot b + c}{a \cdot b + d}$ and $\frac{a+\frac{c}{b}}{a+\frac{d}{b}}$ with $a=10^{-323}, c=4 \cdot 10^{-323}, d=8 \cdot 10^{-323}$ and $b=5.7$.
+2. Compare $x+\sqrt{x^2-1}$ and $\frac{1}{x-\sqrt{x^2-1}}$ around $10^7$ to $7 \cdot 10^7$ range.
 
 ### Errors grow
 
