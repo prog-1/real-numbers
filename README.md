@@ -141,6 +141,7 @@ y=1101-1100=1 \\
 \end{cases}$$
 
 But let's add $10^{-2}$ to the right side:
+
 $$\begin{cases}
 x+10y=11.01 \\
 100x+1001y=1101 \\
